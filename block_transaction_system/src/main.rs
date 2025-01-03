@@ -62,10 +62,17 @@ fn main(){
             amount: 56,
             status: TransactionStatus::Failed,
         },
+
+        Transaction {
+            sender: "Damian".to_string(),
+            reciever: "Friday".to_string(),
+            amount: 500,
+            status: TransactionStatus::Pending,
+        },
     ];
 
     // Filter confirmed transactions
-    let confirmed_transactions = filter_transctions(TransactionStatus::Failed, transactions);
+    let confirmed_transactions = filter_transctions(TransactionStatus::Pending, transactions);
 
     println!("Confirmed transactions:");
     // looping through transaction to print the expected ones
