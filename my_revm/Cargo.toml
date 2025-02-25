@@ -1,0 +1,10 @@
+[package]
+name = "my_revm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethereum-types = "0.14"
+hex = "0.4"       # For hex encoding/decoding
+anyhow = "1.0"    # For error handling
+primitive-types = "0.12"
