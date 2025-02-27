@@ -1,0 +1,9 @@
+[package]
+name = "rust-evm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+primitive-types = "0.12"
+hex = "0.4"
+
