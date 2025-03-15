@@ -2,6 +2,7 @@ pub struct Memory {
     data: Vec<u8>,
 }
 
+//memory is most commonly used to store values that cannot be stored in the Stack, such as arrays and strings.
 impl Memory {
     pub fn new() -> Self {
         Memory { data: vec![] }
